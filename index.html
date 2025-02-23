@@ -9,11 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
 
-    <!--Live Support-->
-    <script type="text/javascript">
-    (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
-    </script>
-
     <style>
       body {
         font-family: 'Cormorant Infant', serif;
@@ -60,6 +55,29 @@
         padding: 10px;
       }
 
+      .input-container {
+        margin: 20px 0;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 1rem;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
       #root {
         width: 100%;
         height: 100%;
@@ -71,11 +89,42 @@
   </head>
   
   <body>
-    
+    <header>
+      <img src="https://assets.yasmin.academy/yasmin-academy-main-logo.svg" alt="Yasmin Academy Logo">
+    </header>
+
+    <div class="content">
+      <div>
+        <h2>Your Learning Journey Starts Here</h2>
+        <p>Explore our online classes and educational resources designed to enhance your knowledge and skills. Join us in a collaborative, engaging, and immersive environment.</p>
+        
+        <div class="input-container">
+          <input type="text" id="meeting-id" placeholder="Enter Meeting ID">
+          <button onclick="joinMeeting()">Join Meeting</button>
+        </div>
+      </div>
+    </div>
+
     <div id="root"></div>
-    
+
     <footer>
-      <p>&copy; Yasmin Academy. All rights reserved.</p>
+      <p>&copy; 2025 Yasmin Academy Hall. All rights reserved.</p>
     </footer>
+
+    <script>
+      function joinMeeting() {
+        var meetingId = document.getElementById('meeting-id').value.trim();
+        
+        if (meetingId) {
+          // Construct the URL with the meeting ID appended to hall.yasmin.academy
+          var meetingUrl = `https://hall.yasmin.academy/${meetingId}`;
+          
+          // Redirect to the meeting URL
+          window.location.href = meetingUrl;
+        } else {
+          alert('Please enter a valid meeting ID.');
+        }
+      }
+    </script>
   </body>
 </html>
