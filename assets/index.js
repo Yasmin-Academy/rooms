@@ -1,6 +1,6 @@
 const url = new URL(location.href)
 
-const roomUrl = new URL("https://<your-subdomain>.whereby.com")
+const roomUrl = new URL("https://yasmin-academy.whereby.com")
 roomUrl.pathname = url.pathname
 roomUrl.search = url.search
 
