@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin Academy Hall</title>
+    <title>Yasmin Academy Rooms</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -108,7 +108,7 @@
     <div id="root"></div>
 
     <footer>
-      <p>&copy; 2025 Yasmin Academy Hall. All rights reserved.</p>
+      <p>&copy; 2025 Yasmin Academy. All rights reserved.</p>
     </footer>
 
     <script>
@@ -116,10 +116,8 @@
         var meetingId = document.getElementById('meeting-id').value.trim();
         
         if (meetingId) {
-          // Construct the URL with the meeting ID appended to hall.yasmin.academy
-          var meetingUrl = `https://hall.yasmin.academy/${meetingId}`;
+          var meetingUrl = `https://rooms.yasmin.academy/${meetingId}`;
           
-          // Redirect to the meeting URL
           window.location.href = meetingUrl;
         } else {
           alert('Please enter a valid meeting ID.');
