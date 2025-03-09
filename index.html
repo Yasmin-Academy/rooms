@@ -93,36 +93,11 @@
       <img src="https://assets.yasmin.academy/yasmin-academy-main-logo.svg" alt="Yasmin Academy Logo">
     </header>
 
-    <div class="content">
-      <div>
-        <h2>Your Learning Journey Starts Here</h2>
-        <p>Explore our online classes and educational resources designed to enhance your knowledge and skills. Join us in a collaborative, engaging, and immersive environment.</p>
-        
-        <div class="input-container">
-          <input type="text" id="meeting-id" placeholder="Enter Meeting ID">
-          <button onclick="joinMeeting()">Join Meeting</button>
-        </div>
-      </div>
-    </div>
-
     <div id="root"></div>
 
     <footer>
       <p>&copy; 2025 Yasmin Academy. All rights reserved.</p>
     </footer>
 
-    <script>
-      function joinMeeting() {
-        var meetingId = document.getElementById('meeting-id').value.trim();
-        
-        if (meetingId) {
-          var meetingUrl = `https://rooms.yasmin.academy/${meetingId}`;
-          
-          window.location.href = meetingUrl;
-        } else {
-          alert('Please enter a valid meeting ID.');
-        }
-      }
-    </script>
   </body>
 </html>
