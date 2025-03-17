@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       chatIcon.setAttribute('data-icon-pixel-size', '70');
       chatIcon.setAttribute('data-chat-small-medium-or-large', 'small');
       chatIcon.setAttribute('data-circle-or-square', 'circle');
-      chatIcon.setAttribute('data-left-or-right', 'right');
+      chatIcon.setAttribute('data-left-or-right', 'left');
       chatIcon.setAttribute('data-chaturl', chatUrl);
       chatIcon.setAttribute('data-hex-color-code', '253551');
       chatIcon.style.display = 'block';
